@@ -14,7 +14,8 @@ Here is an example in Java that utilizes [Spark's Before Filter](http://sparkjav
 
   public static void main(String[] args)
 {
-    // Before-filters are evaluated before each request, and can read the request and read/modify the response.
+    // Before-filters are evaluated before each request, and can read the 
+    // request and read/modify the response.
     before((request, response) -> {
         //force to https                          
         if(!"https".equalsIgnoreCase(request.headers("x-forwarded-proto"))){
