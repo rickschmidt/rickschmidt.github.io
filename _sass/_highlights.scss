@@ -12,6 +12,7 @@
 
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-size:10pt;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
@@ -82,3 +83,4 @@ code {
 .highlight .vg { color: #268BD2 } /* Name.Variable.Global */
 .highlight .vi { color: #268BD2 } /* Name.Variable.Instance */
 .highlight .il { color: #2AA198 } /* Literal.Number.Integer.Long */
+.highlight .lineno { color: #2AA198 } /* Lineno */
