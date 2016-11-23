@@ -3,7 +3,10 @@ layout: post
 title: Force HTTPS on Heroku
 ---
 
-If you have a Java application running on Heroku you may want to force secure https connections. In fact if you're Heroku app is connected a listing on the Salesforce AppExchange you may not accept regular http. The way heroku routes your requst makes it impossible to tell the origin using most conventional patterns in web frameworks.
+## Problem
+If you have a Java application running on Heroku you may want to force secure https connections. In fact if your Heroku app is connected to a listing on the Salesforce AppExchange you may not accept regular http requests. The way heroku routes your requst makes it impossible to tell the origin using most conventional patterns in web frameworks.
+
+## Solution
 
 Heroku does send a `x-forwarded-proto` header that can be used to determine if the origin is http or https.
 
